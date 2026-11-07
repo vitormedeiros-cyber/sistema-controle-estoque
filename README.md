@@ -1,4 +1,4 @@
-# InStock — Sistema de Controle de Estoque
+# InStok — Sistema de Controle de Estoque
 
 Projeto acadêmico em Python, Flask, Jinja2, HTML/CSS/JavaScript e SQLite.
 Arquitetura: routes → services → repositories → database/connection.

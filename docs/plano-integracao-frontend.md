@@ -7,7 +7,7 @@ repositório GitHub. O banco existente permanece sem alterações.
 Referência visual: https://github.com/Mikelutti/sistema-controle-estoque-instok/commit/f999815540e44fd1ca8e051efb99d355382860e1
 
 Arquivos de origem: `InStock Controle de Estoque frontend/index.html`,
-`styles.css` e `script.js`. Preservar identidade InStock, azul-marinho,
+`styles.css` e `script.js`. Preservar identidade InStok, azul-marinho,
 tipografia Manrope com fallback local, painel do login, menu lateral e temas.
 
 ## Abordagem

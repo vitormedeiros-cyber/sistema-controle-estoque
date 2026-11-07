@@ -12,7 +12,7 @@
     ('relatorios.index', 'Relatórios', '≡'),
     ('usuarios.index', 'Usuários', '♙')
 ] %}
-{% set page = namespace(title='InStock') %}
+{% set page = namespace(title='InStok') %}
 {% for endpoint, label, icon in nav_items %}
     {% if request.endpoint == endpoint or (request.blueprint != 'estoque' and request.blueprint == endpoint.split('.')[0]) %}
         {% set page.title = label %}
@@ -23,7 +23,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{{ page.title }} | InStock{% endblock %}</title>
+    <title>{% block title %}{{ page.title }} | InStok{% endblock %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
         {% if g.usuario %}
         <aside id="sidebar" class="sidebar" aria-label="Menu do sistema">
             <div class="sidebar-heading">
-                <a class="logo" href="{{ url_for('index') }}"><span class="logo-mark" aria-hidden="true">▦</span> InStock</a>
+                <a class="logo" href="{{ url_for('index') }}"><span class="logo-mark" aria-hidden="true">▦</span> InStok</a>
                 <button class="sidebar-close icon-btn" type="button" aria-label="Fechar menu" hidden>×</button>
             </div>
             <nav aria-label="Navegação principal">
@@ -74,7 +74,7 @@
                 <button id="menu-toggle" class="menu-toggle icon-btn" type="button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false" hidden>☰</button>
                 <div class="page-heading"><p class="eyebrow">CONTROLE DE ESTOQUE</p><p class="page-title">{{ page.title }}</p></div>
                 {% else %}
-                <a class="logo" href="{{ url_for('index') }}"><span class="logo-mark" aria-hidden="true">▦</span> InStock</a>
+                <a class="logo" href="{{ url_for('index') }}"><span class="logo-mark" aria-hidden="true">▦</span> InStok</a>
                 {% endif %}
                 <div class="header-actions">
                     <button class="icon-btn" type="button" data-theme-toggle aria-label="Ativar tema escuro" aria-pressed="false" hidden><span data-theme-icon aria-hidden="true">☾</span></button>
@@ -85,7 +85,7 @@
                 {% include 'partials/mensagens.html' %}
                 <section class="card page-content">{% block content %}{% endblock %}</section>
             </main>
-            <footer class="site-footer">InStock · Controle de estoque</footer>
+            <footer class="site-footer">InStok · Controle de estoque</footer>
         </div>
     </div>
     {% endblock %}
